@@ -1,0 +1,35 @@
+# Virtual environment
+venv/
+.venv/
+env/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+.egg-info/
+dist/
+build/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Generated output
+output/
+
+# Optional: uncomment to avoid committing large data files
+# data/*.csv
+# !data/sample_mental_health.csv
+
+# OS
+.DS_Store
+Thumbs.db

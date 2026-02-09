@@ -1,0 +1,9 @@
+age,gender,work_pressure,sleep_hours,family_support,stress_level,mental_health_condition,treatment
+23,Female,4,5,2,High,Anxiety,Yes
+31,Male,3,6,3,Medium,None,No
+28,Female,5,4,1,High,Depression,Yes
+35,Male,2,7,4,Low,None,No
+26,Female,4,5,2,High,Anxiety,Yes
+40,Male,3,6,3,Medium,None,No
+29,Female,5,4,2,High,Depression,Yes
+32,Male,2,7,4,Low,None,No
