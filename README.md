@@ -41,17 +41,18 @@ This project analyzes a workplace mental health survey to understand how factors
 - Seaborn  
 
 ## 📂 Project Structure
+```
 workplace-mental-health/
 │
 ├── data/
-│ └── mental_health.csv
+│   └── mental_health.csv
 │
 ├── src/
-│ └── analysis.py
+│   └── analysis.py
 │
 ├── README.md
 └── requirements.txt
-
+```
 
 ## 🚀 How to Run
 
@@ -63,7 +64,6 @@ python src/analysis.py
 
 
 👩‍💻 Author
-
 Pooja Parashuram Bajantri
 Aspiring Data Scientist
 
