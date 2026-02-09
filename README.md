@@ -1,83 +1,69 @@
-# Workplace Mental Health — Mini Project
+# Workplace Mental Health Risk Analysis
 
-A small, extensible project for exploring and analyzing workplace mental health data. You can run it with the included **sample data** right away, then swap in a real dataset when you have one.
+## 📌 Project Overview
+This project analyzes a workplace mental health survey to understand how factors such as **work pressure, sleep hours, and family support** influence employee stress levels and mental health conditions. The goal is to generate meaningful insights that can help organizations design better wellness and support programs.
 
-## What's in this repo
+## 🎯 Objective
+- Explore and understand mental health data  
+- Perform basic data cleaning  
+- Conduct univariate and bivariate analysis  
+- Identify key risk factors affecting employee wellbeing  
 
-- **Sample data** (`data/sample_mental_health.csv`) — synthetic survey-style data so you can run the code without any external dataset.
-- **Data loader** (`src/load_data.py`) — load CSV data; works with the sample file or your own.
-- **Simple analysis** (`src/explore_data.py`) — basic stats and a few visualizations.
-- **Requirements** — Python dependencies in `requirements.txt`.
+## 🛠 What I Have Implemented (Current Progress)
 
-## Quick start
+### 1. Data Loading
+- Loaded survey data using Pandas  
+- Inspected dataset shape and columns  
 
-### 1. Clone or create the project
+### 2. Data Understanding
+- Checked missing values  
+- Identified incomplete reporting in mental health condition column  
 
+### 3. Exploratory Analysis
+- **Univariate Analysis**
+  - Distribution of stress levels  
+  - Reported mental health conditions  
+
+- **Bivariate Analysis**
+  - Relationship between sleep hours and stress  
+  - Relationship between work pressure and stress  
+
+### 4. Key Insights So Far
+- Employees with **high stress sleep around 4–5 hours**, while low-stress employees sleep around 7 hours  
+- Higher work pressure is strongly associated with higher stress  
+- Half of the employees fall under the **high stress** category  
+- Anxiety and depression are the most commonly reported conditions  
+
+## 🧰 Tech Stack
+- Python  
+- Pandas  
+- Matplotlib  
+- Seaborn  
+
+## 📂 Project Structure
+workplace-mental-health/
+│
+├── data/
+│ └── mental_health.csv
+│
+├── src/
+│ └── analysis.py
+│
+├── README.md
+└── requirements.txt
+
+
+## 🚀 How to Run
+
+1. Clone the repository
 ```bash
-cd workplace-mental-health
-```
-
-### 2. Create a virtual environment (recommended)
-
-```bash
-python -m venv venv
-# Windows:
-venv\Scripts\activate
-# macOS/Linux:
-# source venv/bin/activate
-```
-
-### 3. Install dependencies
-
-```bash
+git clone <your-repo-url>
 pip install -r requirements.txt
-```
+python src/analysis.py
 
-### 4. Run with sample data
 
-```bash
-python src/explore_data.py
-```
+👩‍💻 Author
 
-This uses the sample CSV and prints summary stats; if you have a display, it will show simple plots.
+Pooja Parashuram Bajantri
+Aspiring Data Scientist
 
-## Using your own dataset
-
-You don’t need a dataset to start — the sample data is enough. When you’re ready:
-
-1. **Get a dataset** (see options below).
-2. **Put your CSV** in `data/` (e.g. `data/mental_health_survey.csv`).
-3. **Adjust column names** in `src/load_data.py` and `src/explore_data.py` to match your CSV (e.g. age, gender, work type, mental health questions).
-
-### Where to find workplace mental health data
-
-| Source | Description |
-|--------|-------------|
-| [OSMI Mental Health in Tech Survey (Kaggle)](https://www.kaggle.com/datasets/osmi/mental-health-in-tech-survey) | Survey of tech workers; mental health and workplace attitudes. |
-| [Remote Work and Mental Health (Kaggle)](https://www.kaggle.com/datasets/waqi786/remote-work-and-mental-health) | Remote work and mental health. |
-| [OSMI 2017–2021 (Mendeley Data)](https://data.mendeley.com/datasets/mmnzx4w8cg/1) | Multi-year OSMI survey data. |
-
-Download a CSV, place it in `data/`, and update the code to use your file and column names.
-
-## Updating over time
-
-- **Add new scripts** in `src/` (e.g. modeling, more visualizations).
-- **Add notebooks** in a `notebooks/` folder for exploration.
-- **Keep `data/` for CSVs** — add a `data/README.md` to note which files are sample vs real (and add `data/*.csv` to `.gitignore` for large files if you prefer).
-
-## Pushing to GitHub
-
-```bash
-git init
-git add .
-git commit -m "Initial commit: workplace mental health mini project"
-git branch -M main
-git remote add origin https://github.com/YOUR_USERNAME/workplace-mental-health.git
-git push -u origin main
-```
-
-Create the repo on GitHub first (empty, no README), then run the commands above. Use a `.gitignore` so you don’t commit `venv/`, `__pycache__/`, or large data files if you add them later.
-
-## License
-
-Use and adapt as you like. If you use a specific dataset, check its license (e.g. OSMI is often CC BY 4.0).
